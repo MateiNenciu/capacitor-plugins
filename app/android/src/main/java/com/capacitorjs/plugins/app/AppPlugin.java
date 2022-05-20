@@ -135,8 +135,8 @@ public class AppPlugin extends Plugin {
         
         Bundle bundle = intent.getExtras();
         if (bundle != null) {
-            Object referrer = bundle.get(Intent.EXTRA_REFERRER);
-            ret.put("referrer", referrer.toString());
+            Object referrerUrl = bundle.get(Intent.EXTRA_REFERRER);
+            ret.put("referrerUrl", referrerUrl.toString());
         }
         
         notifyListeners(EVENT_URL_OPEN, ret, true);
