@@ -52,6 +52,11 @@ export interface URLOpenListenerEvent {
    * @since 1.0.0
    */
   url: string;
+  
+  /**
+   * If the app was opened from browser this is he referrer url that opened the app.
+   */
+    referrerUrl: string;
 
   /**
    * The source application opening the app (iOS only)
